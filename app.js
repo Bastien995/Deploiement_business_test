@@ -1,6 +1,10 @@
 const express = require('express');
+const db = require("./database")
+const mysql = require("mysql")
+const pagesRoutes = require("./routes/pagesRoutes")
+
+
 const app = express();
-let ejs = require('ejs')
 
 //Definition du moteur de rendu
 app.set('view engine','ejs');
@@ -10,21 +14,10 @@ app.set('views','./html');
 app.use("/assets",express.static("assets"));
 
 
-app.get('/',(req,res)=>{
-    res.render('index')
-})
-app.get('/Ingenieur_logiciel',(req,res)=>{
-    res.render('Ingenieur_logiciel')
-})
-app.get('/A_propos',(req,res)=>{
-    res.render('A_propos')
-})
-app.get('/Paiement',(req,res)=>{
-    res.render('Paiement')
-})
-app.get('/Connexion',(req,res)=>{
-    res.render('Connexion')
-})
+//Routes
+app.use(pagesRoutes);
+
+
 app.listen(5501,()=>{
     console.log("htpps//localhost:5501/")
 })

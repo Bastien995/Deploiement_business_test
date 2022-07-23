@@ -48,18 +48,25 @@
                 </div>
             </div>
         </div>
+        <!-- Formulaire -->
         <div class="trailer">
             <span class="close" onclick="toggle();">&#10006;</span>
             <div class="container-form d-flex justify-content-center">
-                    <form action="" style="width: 400px;">
+                    <form action="/" method="post" style="width: 400px;">
+                         <!-- Message d'erreur du formulaire -->
+                        <% if(typeof alerts != "undefined"){%> 
+                                <% for(alert of alerts){%> 
+                            <p class="errorMsg"><%= alert.msg %> </p>
+                                <%}%> 
+                        <%}%>
                         <label for="nom">Nom:</label><br>
-                        <input type="text" id="Nom" placeholder="Votre nom" required style="width:300px"><br>
+                        <input name="nom" type="text" id="Nom" placeholder="Votre nom"  style="width:300px"><br>
                         <label for="prenom">Prenom:</label><br>
-                        <input type="text" id="prenom" placeholder="Votre prenom" required style="width:300px"><br>
-                        <label for="nom">Email:</label><br>
-                        <input type="email" id="email" placeholder="Votre email" required style="width:300px"><br>
+                        <input name="prenom" type="text" id="prenom" placeholder="Votre prenom"  style="width:300px"><br>
+                        <label for="email">Email:</label><br>
+                        <input name="email" type="email" id="email" placeholder="Votre email"  style="width:300px"><br>
                         <label for="password">Mot de passe</label><br>
-                        <input type="password" name="password" id="password" placeholder="Mot de passe" style="width:300px"><br>
+                        <input name="password" type="password" id="password" placeholder="Mot de passe" style="width:300px"><br>
                         <input type="submit" style="width: 200px;">
                     </form>
                 </div>
