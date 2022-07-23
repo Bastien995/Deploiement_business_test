@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bienvenue sur Ecole 241 Business</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <style>
@@ -14,64 +14,33 @@
     </style>
     <section class="section-bg">
         <header style="height:100vh;">
-            <nav class="centrer">
+            <div class="centrer">
                 <div class="container position-relative">
                     <div class="navigation">
                         <div class="nav-container glass3">
-                          <nav class="navbar position-relative">
-                            <div class="nav-mobile "><a id="nav-toggle" href="#!"><span></span></a></div>
-                            <div class="brand">
-                                <a href="#!">Logo</a>
-                              </div>
-                            <ul class="nav-list">
-                              <li>
-                                <a href="index.html">Accueil</a>
-                              </li>
-                              <li>
-                                <a href="#!">Formations</a>
-                                <ul class="nav-dropdown">
-                                  <li>
-                                    <a href="Ingenieur_logiciel.html">Ingenieur Logiciel</a>
-                                  </li>
-                                  <li>
-                                    <a href="#!">Ingenieur Cloud</a>
-                                  </li>
-                                </ul>
-                              </li>
-                              <li>
-                                <a href="Paiement.html">Paiement</a>
-                              </li>
-                              <li>
-                                <a href="A_propos.html">A propos</a>
-                              </li>
-                              <li>
-                                <a href="#!">Contact</a>
-                              </li>
-                              <li>
-                                <a href="#!">S'inscrire</a>
-                              </li>
-                            </ul>
-                          </nav>
+                          <%- include('partials/navigation') %>
                         </div>
                     </div>
                     <div class="container-fluid d-flex align-items-center" style="height: 70vh;color:white">
                         <div class="row">
                             <div class="col-lg-6">
                                 <h1 class="header-h1-style">Devevenez Ingenieur Logiciel.</h1>
-                                <p class="header-p-style">Lancez-vous dans des emplois d'ingénieur logiciel dans des <strong>entreprises Internationales</strong> de premier plan avec confiance, compétences techniques et un portefolio solide.</p>
+                                <p class="header-p-style">Formez-vous et devenez ingénieur logiciel dans des entreprises internationales de premier plan.
+                                    C’est possible en s’inscrivant dès maintenant pour notre prochaine rentrée en septembre.
+                                    </p>
                                 <a href="#" class="btn bouton">S'inscrire</a>
                             </div>
                             <div class="col-lg-5">
                                 <div>
-                                    <img src="img/earth.png" alt="" width="500px" class="globe-img4">
+                                    <img src="assets/css/img/earth.png" alt="" width="500px" class="globe-img4">
                                 </div>
                                 <div>
-                                    <img src="img/business-3d-browser-window-with-open-web-page.png" alt="" width="300px" class="globe-img5">
+                                    <img src="assets/css/img/business-3d-browser-window-with-open-web-page.png" alt="" width="300px" class="globe-img5">
                                 </div> 
                             </div>
                         </div>
                     </div>
-            </nav>
+                </div>
         </header>
         <div class="container-fluid mb-5">
             <div class="container">
@@ -81,10 +50,10 @@
                         <p class="section-title">L’Ingénieur Logiciel est en charge de la programmation et de la validation d’un module logiciel, il assure egalement son intégration avant livraison et ensuite sa maintenance en condition opérationnelle. Il participe ainsi à l’ensemble du cycle d’un projet informatique, depuis la définition du projet jusqu’aux phases de maintenance, et travaille au sein d’une équipe, sous la responsabilité d’un chef de projet informatique.</p>
                     </div>
                     <div class="col-lg-5 glass display-none">
-                        <img src="img/world-education-4022884-3328667.webp" alt="">
+                        <img src="assets/css/img/world-education-4022884-3328667.webp" alt="">
                     </div>
                     <div class="col-lg-5 glass position-absolute display-mobile" style="right: 50px;">
-                        <img src="img/world-education-4022884-3328667.webp" alt="">
+                        <img src="assets/css/img/world-education-4022884-3328667.webp" alt="">
                     </div>
                 </div>
             </div>
@@ -92,7 +61,7 @@
         <div class="container-fluid section-margin">
             <div class="row section-text-color d-flex justify-content-around" >
                 <p class="text-center fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum omnis, officia dicta delectus beatae optio adipisci veniam cupiditate voluptas asperiores provident quaerat aspernatur harum nisi recusandae alias sapiente ad quia?</p>
-                <div class="col-lg-3 glass">
+                <div class="col-lg-3 glass card">
                     <span class="numero">01</span>
                     <h3>Compétences techniques</h3>
                     <ul>
@@ -103,7 +72,7 @@
                         <li>Bonne maitrise de Git</li>
                     </ul>
                 </div>
-                <div class="col-lg-3 glass">
+                <div class="col-lg-3 glass card">
                     <span class="numero">02</span>
                     <h3>Experiences Logicielles</h3>
                     <ul>
@@ -112,7 +81,7 @@
                         <li>Transformation des spécifications techniques <br> en architecture et en base de code.</li>
                     </ul>
                 </div>
-                <div class="col-lg-3 glass">
+                <div class="col-lg-3 glass card">
                         <span class="numero">03</span>
                     <h3>Qualités professionnelles.</h3>
                     <ul>
@@ -130,21 +99,21 @@
                 <h2 class="text-center">Programme de formation</h2>
                 <div class="col-lg">
                     <h6 class="text-center">Formation en ligne a temps plein.</h6>
-                    <p><strong>Durée: </strong>12mois</p>
-                    <p>Lundi-Vendredi</p>
+                    <p style="font-size:30px"><strong>Durée: </strong>12mois</p>
+                    <p><strong>Frequence des cours:</strong> Lundi-Vendredi</p>
                     <hr>
                     <p><strong>Tarification:</strong><br><span style="font-size:30px;font-weight: bold;">1,250,000fcfa</span></p>
                     <p>(<strong>50,000fcfa</strong> de frais d'inscription inclu)</p>
                     <hr>
                     <h6>Modalité de paiement*:</h6>
                     <ul>
-                        <li><strong>Cash</strong>.</li>
-                        <li><strong>Trimestrielle: </strong><span style="font-size: 20px;font-weight:bold;">300,000fcfa</span>/trimestre.</li>
-                        <li><strong>Semestrielle: </strong><span style="font-size: 20px;font-weight:bold;">400,000fcfa</span>/semestre.</li>
+                        <li><strong>Règlement en intégralité</strong>.</li>
+                        <li><strong>Trimestrielle: </strong><span style="font-size: 20px;font-weight:bold;">300,000fcfa</span></li>
+                        <li><strong>Semestrielle: </strong><span style="font-size: 20px;font-weight:bold;">400,000fcfa</span></li>
                     </ul>
                     <p>*(frais d'inscriptions de <strong>50,000fcfa</strong>  non inclu)</p>
                     <hr>
-                    <p><strong>Debut: </strong>JJ/MM/AA</p>
+                    <p><strong>Debut: </strong>Septembre 2022</p>
                     <a href="" class="btn bouton">S'inscrire</a>
                 </div>
             </div>
@@ -154,24 +123,24 @@
                 <h2 class="text-center">Comment fonctionne l'apprentissage?</h2>
                 <p class="text-center">Ce que vous ferez tout au long du programme.</p>
                 <div class="col-lg-3">
-                    <div class="img-fluid"><img src="img/business-3d-cork-board-with-statistics-and-notes.png" alt="" width="100px"></div>
+                    <div class="img-fluid"><img src="assets/css/img/business-3d-cork-board-with-statistics-and-notes.png" alt="" width="100px"></div>
                     <h3>PROJETS</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam odit non itaque quod velit temporibus vitae accusantium voluptatem sint reprehenderit optio ab libero aliquid in cupiditate mollitia quaerat, ipsum ipsam?</p>
+                    <p>Parce qu’il n’y a rien de mieux que des projets réels pour vous mettre en situation. Nous vous formons à être de manière pratique apte à répondre à n’importe quel besoin à n’importe quel moment suivant les tendances du marché. Vous travaillerez sur des projets réels afin de vous accoutumer à votre futur environnement de travail.</p>
                 </div>
                 <div class="col-lg-3">
-                    <div class="img-fluid"><img src="img/business-3d-three-grey-metal-gears.png" alt="" width="100px"></div>
+                    <div class="img-fluid"><img src="assets/css/img/business-3d-three-grey-metal-gears.png" alt="" width="100px"></div>
                     <h3>JEU DE RÔLE</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam odit non itaque quod velit temporibus vitae accusantium voluptatem sint reprehenderit optio ab libero aliquid in cupiditate mollitia quaerat, ipsum ipsam?</p>
+                    <p>parce qu’il est nécessaire pour vous de comprendre toutes les procédures mises en place dans la réalisation de projets. Nous vous donnons l’opportunité de travailler sur différents postes et différentes étapes de projets afin que vous puissiez être prêt à intervenir sur n’importe quelle demande du client.</p>
                 </div>
                 <div class="col-lg-3">
-                    <div class="img-fluid"><img src="img/business-3d-pink-brain.png" alt="" width="100px"></div>
+                    <div class="img-fluid"><img src="assets/css/img/business-3d-pink-brain.png" alt="" width="100px"></div>
                     <h3>EXERCISES</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam odit non itaque quod velit temporibus vitae accusantium voluptatem sint reprehenderit optio ab libero aliquid in cupiditate mollitia quaerat, ipsum ipsam?</p>
+                    <p> Des exercices réalistes et suivant les mesures actuelles. Nous pensons que c’est en s’exerçant encore et encore que l’on fixe ses compétences et ses connaissances. Notre objectif dans cet exercice comme nous aimons tant le dire c’est de faire de vous des personnes prêtes à l’emploi.</p>
                 </div>
                 <div class="col-lg-3">
-                    <div class="img-fluid"><img src="img/casual-life-3d-game-controller.png" alt="" width="100px"></div>
+                    <div class="img-fluid"><img src="assets/css/img/casual-life-3d-game-controller.png" alt="" width="100px"></div>
                     <h3>GAMIFICATION</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam odit non itaque quod velit temporibus vitae accusantium voluptatem sint reprehenderit optio ab libero aliquid in cupiditate mollitia quaerat, ipsum ipsam?</p>
+                    <p>Rien de mieux que d’apprendre par l’action. Nous sommes partisans du learning by doing et pensons que c’est en créant des environnements créatifs et compétitifs que chaque apprenant est en mesure de mieux assimiler mais aussi mettre en pratique chaque élément appris au cours de la formation</p>
                 </div>
             </div>
         </div>
@@ -228,61 +197,63 @@
                 <div class="row">
                     <h2 class="text-center section-text-color mb-5">Ce qui nous distingue</h2>
                     <div class="col-lg-3">
-                        <div class="card* glass justify-content-center*">
+                        <div class="card glass justify-content-center*">
                             <div class="card-img* d-flex justify-content-center">
-                                <img class="img-fluid" src="img/casual-life-3d-pink-gemstone.png" alt="" width="100px">
+                                <img class="img-fluid" src="assets/css/img/casual-life-3d-pink-gemstone.png" alt="" width="100px">
                             </div>
                             <div class="card-body* text-center">
                                 <div class="card-title">
                                     <h4>Des standards de la Silicon Valley</h4> 
                                 </div>
                                 <div class="card-paragraph">
-                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis impedit odio blanditiis vel rem enim veniam autem facere, ut libero quam dolor minus, incidunt, voluptatem corrupti explicabo mollitia voluptate consequuntur!</p>
+                                    <p>Nous avons opté pour un environnement et une normalisation élevée pour donner de la valeur ajoutée à chaque personne qui passera par chez nous.
+                                        Nous pensons qu’il n’y a que l’excellent pour former l’excellence. De ce fait, pour vous offrir l’excellence nous avons choisis de faire appel à ceux qui sont aujourd’hui une référence dans le domaine de la technologie.
+                                        </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="card* glass">
+                        <div class="card glass">
                             <div class="card-img* d-flex justify-content-center">
-                                <img class="img-fluid" src="img/casual-life-3d-pink-gemstone.png" alt="" width="100px">
+                                <img class="img-fluid" src="assets/css/img/casual-life-3d-pink-gemstone.png" alt="" width="100px">
                             </div>
                             <div class="card-body* text-center">
                                 <div class="card-title">
                                     <h4>Compétences et connaissances techniques</h4> 
                                 </div>
                                 <div class="card-paragraph">
-                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis impedit odio blanditiis vel rem enim veniam autem facere, ut libero quam dolor minus, incidunt, voluptatem corrupti explicabo mollitia voluptate consequuntur!</p>
+                                    <p>Il n’est plus question de bûcher vos cours ou de les abandonner dans un cahier au fond de vos cartons. Nous voulons faire de chaque apprenant des personnes prêtes à toute éventualité et à mettre en pratique chaque élément appris sans avoir la moindre difficulté.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="card* glass">
+                        <div class="card glass">
                             <div class="card-img* d-flex justify-content-center">
-                                <img class="img-fluid" src="img/casual-life-3d-pink-gemstone.png" alt="" width="100px">
+                                <img class="img-fluid" src="assets/css/img/casual-life-3d-pink-gemstone.png" alt="" width="100px">
                             </div>
                             <div class="card-body* text-center">
                                 <div class="card-title">
                                     <h4>Solides compétences en back-end</h4> 
                                 </div>
                                 <div class="card-paragraph">
-                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis impedit odio blanditiis vel rem enim veniam autem facere, ut libero quam dolor minus, incidunt, voluptatem corrupti explicabo mollitia voluptate consequuntur!</p>
+                                    <p>Parce que les données sont de plus en plus importantes dans leur traitement et leur sauvegarde. Nous nous assurons que vous soyez en mesure de créer, gérer, et exploiter des bases de données tout en assurant la sécurité de celles-ci.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="card* glass">
+                        <div class="card glass">
                             <div class="card-img* d-flex justify-content-center">
-                                <img class="img-fluid" src="img/casual-life-3d-pink-gemstone.png" alt="" width="100px">
+                                <img class="img-fluid" src="assets/css/img/casual-life-3d-pink-gemstone.png" alt="" width="100px">
                             </div>
                             <div class="card-body* text-center">
                                 <div class="card-title">
                                     <h4>Profondeur du portefolio technique</h4> 
                                 </div>
                                 <div class="card-paragraph">
-                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis impedit odio blanditiis vel rem enim veniam autem facere, ut libero quam dolor minus, incidunt, voluptatem corrupti explicabo mollitia voluptate consequuntur!</p>
+                                    <p>Nous nous assurons que les aspects techniques de cette formation sont maîtrisés par chaque apprenant.</p>
                                 </div>
                             </div>
                         </div>
@@ -290,7 +261,7 @@
                 </div>
             </div>
         </section>
-        <section class="pb-5">
+        <section class="pb-5 d-flex justify-content-center">
             <div class="container glass">
                 <div>
                     <h2 class="section-title text-center">Les debouchés</h2>
@@ -314,30 +285,16 @@
             </div>
         </section>
     </section>
-    <footer>
-        <div class="container-fluid p-5">
-            <div class="row">
-                <div class="col-lg-4">
-                    <h5>Nos coordonnees</h5>
-                    <p><strong>Tel: </strong>xxxxxxxx</p>
-                    <p><strong>Email: </strong>contact@ecole241.business</p>
-                    <p><strong>Adresse: </strong>Ancien SOBRAGA, Libreville, Gabon</p>
-                </div>
-                <div class="col-lg-4">
-                    <h5>Liens rapides</h5>
-                    <p><a href="#">Accueil</a></p>
-                    <p><a href="#">Formations</a></p>
-                    <p><a href="#">A propos</a></p>
-                    <p><a href="#">S'Inscrire</a></p>
-                </div>
-                <div class="col-lg-4">
-                    <h5>Suivez nous!</h5>
-                    <a href="#"><img src="img/9189029_facebook_icon.png" alt="" width="80px"></a>
-                    <a href="#"><img src="img/9189040_linkedin_icon.png" alt="" width="80px"></a>
-                </div>
-            </div>
-        </div>
-    </footer>
+   <%- include('partials/footer') %>
+    <script src="assets/css/js/vanilla-tilt.min.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll('.card'),{
+            max:25,
+            speed:400,
+            glare:true,
+            "max-glare":0.5,
+        })
+    </script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script>
             (function($) { // Begin jQuery

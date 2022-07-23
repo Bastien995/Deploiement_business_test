@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bienvenue sur Ecole 241 Business</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <style>
@@ -14,75 +14,44 @@
     </style>
     <section class="section-bg">
         <header style="height:100vh;">
-            <nav class="centrer">
+            <div class="centrer">
                 <div class="container position-relative">
                     <div class="navigation">
                         <div class="nav-container glass3">
-                          <nav class="navbar position-relative">
-                            <div class="nav-mobile "><a id="nav-toggle" href="#!"><span></span></a></div>
-                            <div class="brand">
-                                <a href="#!">Logo</a>
-                              </div>
-                            <ul class="nav-list">
-                              <li>
-                                <a href="index.html">Accueil</a>
-                              </li>
-                              <li>
-                                <a href="#!">Formations</a>
-                                <ul class="nav-dropdown">
-                                  <li>
-                                    <a href="Ingenieur_logiciel.html">Ingenieur Logiciel</a>
-                                  </li>
-                                  <li>
-                                    <a href="#!">Ingenieur Cloud</a>
-                                  </li>
-                                </ul>
-                              </li>
-                              <li>
-                                <a href="Paiement.html">Paiement</a>
-                              </li>
-                              <li>
-                                <a href="A_propos.html">A propos</a>
-                              </li>
-                              <li>
-                                <a href="#!">Contact</a>
-                              </li>
-                              <li>
-                                <a href="#!">S'inscrire</a>
-                              </li>
-                            </ul>
-                          </nav>
+                          <%- include('partials/navigation') %>
                         </div>
                     </div>
                     <div class="container-fluid d-flex align-items-center width90*" style="height: 70vh;color:white">
                         <div class="row">
                             <div class="col-lg-6">
                                 <h1 class="header-h1-style">Ecole 241 business</h1>
-                                <p class="header-p-style">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis provident at repellendus necessitatibus tempora pariatur consequatur quam alias molestias nam, neque earum tempore quia corporis laborum nostrum fugit similique velit.</p>
-                                <a href="#" class="btn bouton">S'inscrire</a>
+                                <p class="header-p-style">C’est dans l’optique de vulgariser le numérique et participer à l’employabilité des gabonais que nous avons mis en place l’université des métiers innovants. Nous pensons qu’il est possible de se reconstruire et de voir sa vie transformée depuis le Gabon grâce au numérique. 
+                                    Le changement est possible dès maintenant, il suffit de vous inscrire pour y participer.
+                                    </p>
+                                <a href="#move" class="btn bouton">S'inscrire</a>
                             </div>
                             <div class="col-lg-5">
                                 <div>
-                                    <img src="img/earth.png" alt="" width="500px" class="globe-img6">
+                                    <img src="assets/css/img/earth.png" alt="" width="500px" class="globe-img6">
                                 </div>
                                 <div>
-                                    <img src="img/business-3d-seated-black-businessman-with-laptop.png" alt="" width="300px" class="globe-img7">
+                                    <img src="assets/css/img/business-3d-seated-black-businessman-with-laptop.png" alt="" width="300px" class="globe-img7">
                                 </div> 
                             </div>
                         </div>
                     </div>
                 </div>
-            </nav>
+            </div>
         </header>
             <section>
                 <div class="container" data-aos="fade-up">
                 <div class="row glass d-flex justify-content-around align-items-center section-text-color">
                     <div class="col-lg-5">
-                        <h2 class="section-h2">Qui sommes nous?</h2>
+                        <h2 class="section-h2" id="move">Qui sommes nous?</h2>
                         <p>École 241 Business, est une filiale de l’école 241 qui etait exclusivement une école portée sur la formation des entrepreneurs dans le domaine du commerce et l’artisanat par l’entremise du numérique et qui aujourd'hui integre deux nouvelles formations a ces atifs notamment des formations en ligne <strong>d'Ingenieur Cloud Google</strong> et <strong>d'Ingenieur Logiciel</strong>.. Sa méthode d’enseignement s’inspire des plus grandes écoles du numérique, qui est la pédagogie inversée : un fonctionnement participatif qui permet aux étudiants de libérer toute leur créativité́ grâce à l’apprentissage par projets. L’établissement est fondé par Sylvère Boussamba, un Tech-Entrepreneur passionné, pour ajouter de la valeur aux personnes désirants se former et avoir un métier dans le numérique. Pour former en grand nombre les meilleurs talents de demain, l’école 241 met à disposition la meilleure infrastructure dans un lieu unique et moderne.</p>
                     </div>
                     <div class="col-lg-6">
-                        <img class="img-fluid" src="img/business-3d-business-advisers-with-a-big-stack-of-coins.png" alt="">
+                        <img class="img-fluid" src="assets/css/img/business-3d-business-advisers-with-a-big-stack-of-coins.png" alt="">
                     </div>
                 </div>
             </div>
@@ -90,20 +59,31 @@
         <section class="section-margin">
             <div class="container">
                 <div class="row glass">
-                    <h3>Notre vision.</h3>
+                    <h3 style="font-weight:bold ;">Notre vision.</h3>
                     <div class="col-lg">
-                        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed officia, ut voluptates dicta deleniti sequi eius quas minima nisi suscipit sapiente corrupti est, animi exercitationem rerum error debitis voluptatem nobis?</h2>
+                        <h4>Comme pour l’école 241, notre vision n’a pas changé disons plutôt qu’elle s’est accrue. 
+                            En effet nous restons fixés sur les objectifs premier qui sont de:
+                            <ul>
+                                <li>Permettre l'insertion ou l'inclusion sociale grâce aux compétences numériques;</li>
+                                <li>Créer des leaders capable d'apporter un changement considérable;</li>
+                                <li>Bâtir un écosystème entrepreneurial à fort potentiel.</li>
+                            </ul>
+                            En plus de cela, apporter la valeur ajoutée du Gabon sur le plan international grâce au numérique. 
+                            Nous croyons que chaque gabonais formé est un élément important en ce qui concerne la valorisation du numérique africaine.
+                            </h4>
                     </div>
                 </div>
             </div>
             <div class="container mt-5">
                 <div class="row glass d-flex align-items-center">
                     <div class="col-lg-5">
-                        <img src="img/business-3d-target-with-dart-arrow-in-bullseye.png" alt="" class="img-fluid">
+                        <img src="assets/css/img/business-3d-target-with-dart-arrow-in-bullseye.png" alt="" class="img-fluid">
                     </div>
                     <div class="col-lg-6">
-                        <h3>Notre mission.</h3>
-                        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed officia, ut voluptates dicta deleniti sequi eius quas minima nisi suscipit sapiente corrupti est, animi exercitationem rerum error debitis voluptatem nobis?</h2>
+                        <h3 style="font-weight: bold;">Notre mission.</h3>
+                        <h4>L'école 241 Business , dans son programme, s'est fixée comme mission celle de sensibiliser, d’éduquer et transformer.
+                            Nous agissons avec la directive qu’il ne s’agit pas seulement de formation que nous offrons mais surtout une transformation radicale des vies et des systèmes de pensées.
+                            </h4>
                     </div>
                 </div>
             </div>
@@ -123,7 +103,7 @@
                           <p>À l' École 241, nous vous donnons les codes pour réaliser vos rêves !</p>
                     </div>
                     <div class="col-lg-6">
-                        <img class="img-fluid" src="img/Coach_Silvere.jpg" alt="" style="border-radius: 50px;">
+                        <img class="img-fluid" src="assets/css/img/Coach_Silvere.jpg" alt="" style="border-radius: 20px;">
                     </div>
                 </div>
             </div>
@@ -132,11 +112,14 @@
             <div class="container">
                 <div class="row d-flex align-items-center">
                     <div class="col-lg-6">
-                        <img src="img/Signature.jpg" alt="" class="img-fluid" style="border-radius: 50px;">
+                        <img src="assets/css/img/Signature.jpg" alt="" class="img-fluid" style="border-radius: 20px;">
                     </div>
                     <div class="col-lg-6 glass">
                         <h2 class="section-h2"> Ceremonies de signature du partenariat avec JFN IT.</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, sapiente. Consequuntur fuga illo inventore doloremque eaque quibusdam id quis sed neque temporibus totam veniam, ipsum ab, repellat eius laudantium. <br> Exercitationem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore nam facilis sed delectus, deserunt officia illo nesciunt reprehenderit tempore perspiciatis? Molestias itaque laboriosam reprehenderit consequuntur deleniti corrupti dolor iste amet.</p>
+                        <p>C’est dans la recherche de perfection de notre offre que nous avons décidé de nous rapprocher des meilleurs. Pour ce faire, nous avons signé des partenariats avec divers grands organismes dont JFN IT.
+                            En effet, cette collaboration consistera à apporter un aspect international à notre formation mais aussi permettra à chaque apprenant de découvrir les différentes tendances en matière d’emploi et d’apprentissage au niveau de l’international.
+                            Vous n’êtes plus seul face au monde mais vous êtes désormais accompagnés et équipés
+                            </p>
                     </div>
                 </div>
             </div>
@@ -145,46 +128,52 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3">
-                        <div class="card glass">
+                        <div class="card cardglass">
                             <div class="card-img"></div>
                             <div class="card-body">
                                 <div class="card-title">
-                                    <h3>Lorem Ipsum</h3> 
+                                    <h3>Qwasar</h3> 
                                 </div>
                                 <div class="card-paragraph">
-                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis impedit odio blanditiis vel rem enim veniam autem facere, ut libero quam dolor minus, incidunt, voluptatem corrupti explicabo mollitia voluptate consequuntur!</p>
+                                    <p>Découvrez notre partenaire Qwasar Silicon Valley.
+                                        Grâce à sa méthode d’apprentissage similaire à la nôtre et à des contenus de grande qualité, Qwasar apporte sa pierre à l’édifice afin de faire de chaque apprenant gabonais candidat apte à répondre des des besoins des plus grandes sociétés internationales au même titre que des ingénieurs américains ou indien. 
+                                        Qwasar se veut aussi acteur du développement numérique de l’Afrique centrale.
+                                        </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="card glass">
+                        <div class="card cardglass">
                             <div class="card-img"></div>
                             <div class="card-body">
                                 <div class="card-title">
-                                    <h3>Lorem Ipsum</h3> 
+                                    <h3>Google</h3> 
                                 </div>
                                 <div class="card-paragraph">
-                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis impedit odio blanditiis vel rem enim veniam autem facere, ut libero quam dolor minus, incidunt, voluptatem corrupti explicabo mollitia voluptate consequuntur!</p>
+                                    <p>C'est en ayant compris que l’Afrique est le prochain continent du numérique et un futur hub numérique que Google a mis en place des partenariats avec des organismes africains afin d’offrir la capacité aux africains de participer à ce rayonnement technologique en Afrique. 
+                                        </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="card glass">
+                        <div class="card cardglass">
                             <div class="card-img"></div>
                             <div class="card-body">
                                 <div class="card-title">
-                                    <h3>Lorem Ipsum</h3> 
+                                    <h3>Ogooue Labs</h3> 
                                 </div>
                                 <div class="card-paragraph">
-                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis impedit odio blanditiis vel rem enim veniam autem facere, ut libero quam dolor minus, incidunt, voluptatem corrupti explicabo mollitia voluptate consequuntur!</p>
+                                    <p>Partenaire depuis nos débuts. Ils ont porté notre vision de l’université des métiers innovants depuis son sein afin de donner à chaque africains en général et chaque gabonais en particulier de se reconstruire grâce au numérique. 
+                                        Nous le savons, il y a tellement d’opportunités encore non saisies dans le numérique et nous voulons être les précurseurs de cette révolution.
+                                        </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="card glass">
+                        <div class="card cardglass">
                             <div class="card-img"></div>
                             <div class="card-body">
                                 <div class="card-title">
@@ -212,29 +201,29 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-3">
                         <div class="card glass">
-                            <div class="card-img">
-                                <img src="img/Ogooue-Labs-1-1024x421.png" alt="" class="img-fluid">
+                            <div class="card-img" style="background-color: white;border-radius:15px;padding:1rem">
+                                <img src="assets/css/img/Ogooue-Labs-1-1024x421.png" alt="" class="img-fluid">
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="card glass">
-                            <div class="card-img">
-                                <img src="img/Qwasar-Logo-07.png" alt="" class="img-fluid">
+                            <div class="card-img" style="background-color: white;border-radius:15px;padding:1rem">
+                                <img src="assets/css/img/Qwasar-Logo-07.png" alt="" class="img-fluid">
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="card glass">
-                            <div class="card-img">
-                                <img src="img/jfnlogo.png" alt="" class="img-fluid">
+                            <div class="card-img" style="background-color: white;border-radius:15px;padding:1.15rem 1rem">
+                                <img src="assets/css/img/jfnlogo.png" alt="" class="img-fluid">
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="card glass">
-                            <div class="card-img">
-                                <img src="img/kisspng-google-logo-googleplex-google-search-5b2cd7fd2d3570.5263877415296655331852-removebg-preview.png" alt="" class="img-fluid">
+                            <div class="card-img" style="background-color: white;border-radius:15px;">
+                                <img src="assets/css/img/kisspng-google-logo-googleplex-google-search-5b2cd7fd2d3570.5263877415296655331852-removebg-preview.png" alt="" class="img-fluid">
                             </div>
                         </div>
                     </div>
@@ -260,12 +249,21 @@
                 </div>
                 <div class="col-lg-4">
                     <h5>Suivez nous!</h5>
-                    <a href="#"><img src="img/9189029_facebook_icon.png" alt="" width="80px"></a>
-                    <a href="#"><img src="img/9189040_linkedin_icon.png" alt="" width="80px"></a>
+                    <a href="#"><img src="assets/css/img/9189029_facebook_icon.png" alt="" width="80px"></a>
+                    <a href="#"><img src="assets/css/img/9189040_linkedin_icon.png" alt="" width="80px"></a>
                 </div>
             </div>
         </div>
     </footer>
+    <script src="assets/css/js/vanilla-tilt.min.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll('.card'),{
+            max:25,
+            speed:400,
+            glare:true,
+            "max-glare":0.5,
+        })
+    </script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script>
             (function($) { // Begin jQuery

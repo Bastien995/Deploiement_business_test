@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bienvenue sur Ecole 241 Business</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
   <style>
@@ -16,46 +16,13 @@
         <header style="height:100vh ;">
                     <div class="navigation">
                         <div class="nav-container glass3">
-                          <nav class="navbar position-relative">
-                            <div class="nav-mobile "><a id="nav-toggle" href="#!"><span></span></a></div>
-                            <div class="brand">
-                                <a href="#!">Logo</a>
-                              </div>
-                            <ul class="nav-list">
-                              <li>
-                                <a href="index.html">Accueil</a>
-                              </li>
-                              <li>
-                                <a href="#!">Formations</a>
-                                <ul class="nav-dropdown">
-                                  <li>
-                                    <a href="Ingenieur_logiciel.html">Ingenieur Logiciel</a>
-                                  </li>
-                                  <li>
-                                    <a href="#!">Ingenieur Cloud</a>
-                                  </li>
-                                </ul>
-                              </li>
-                              <li>
-                                <a href="Paiement.html">Paiement</a>
-                              </li>
-                              <li>
-                                <a href="A_propos.html">A propos</a>
-                              </li>
-                              <li>
-                                <a href="#!">Contact</a>
-                              </li>
-                              <li>
-                                <a href="#!">S'inscrire</a>
-                              </li>
-                            </ul>
-                          </nav>
+                          <%- include('partials/navigation_users')%>
                         </div>
                     </div>
-                <div class="container glass">
-                    <div class="row d-flex justify-content-between">
+                <div class="container glass2 d-flex justify-content-center">
+                    <div class="row">
                         <div class="col-lg-4 center">
-                            <img src="img/Coach_Silvere.jpg" alt="" width="250px" style="border-radius:50% ;" class="mb-4">
+                            <img src="assets/css/img/Coach_Silvere.jpg" alt="" width="250px" style="border-radius:50% ;" class="mb-4">
                             <p><strong>Nom: </strong>XXXXXXXXXXX</p>
                             <p><strong>Prenom: </strong>XXXXXXXXXXX XXXXXXXXXXX</p>
                         </div>
@@ -80,30 +47,7 @@
             </div>
         </header>
     </section>
-    <footer>
-      <div class="container-fluid p-5">
-          <div class="row">
-              <div class="col-lg-4">
-                  <h5>Nos coordonnees</h5>
-                  <p><strong>Tel: </strong>xxxxxxxx</p>
-                  <p><strong>Email: </strong>contact@ecole241.business</p>
-                  <p><strong>Adresse: </strong>Ancien SOBRAGA, Libreville, Gabon</p>
-              </div>
-              <div class="col-lg-4">
-                  <h5>Liens rapides</h5>
-                  <p><a href="#">Accueil</a></p>
-                  <p><a href="#">Formations</a></p>
-                  <p><a href="#">A propos</a></p>
-                  <p><a href="#">S'Inscrire</a></p>
-              </div>
-              <div class="col-lg-4">
-                  <h5>Suivez nous!</h5>
-                  <a href="#"><img src="img/9189029_facebook_icon.png" alt="" width="80px"></a>
-                  <a href="#"><img src="img/9189040_linkedin_icon.png" alt="" width="80px"></a>
-              </div>
-          </div>
-      </div>
-  </footer>
+    <%- include('partials/footer') %>
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script>
             (function($) { // Begin jQuery
